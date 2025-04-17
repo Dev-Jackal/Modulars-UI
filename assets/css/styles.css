@@ -18,3 +18,124 @@ body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
+
+/* ===== Common ===== */
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    max-width: calc(100% - 48px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 172px;
+    height: 56px;
+    border-radius: 40px;
+    border: 1.5px solid var(--md-primary-color);
+
+    background: var(--md-primary-color);
+    color: var(--md-white-color);
+
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+
+    transition: 0.25s;
+}
+
+.btn:hover {
+    color: var(--md-primary-color);
+    background-color: var(--md-white-color);
+}
+
+/* === Header === */
+.header {
+    min-height: 100vh;
+
+    font-family: "Public Sans", sans-serif;
+}
+
+.header-top-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 28px 0 14px;
+}
+
+.header-top-wrapper::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    content: "";
+    width: 1140px;
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        #fff 0%,
+        #dddcdc 51.09%,
+        rgba(212, 212, 212, 0) 99.68%
+    );
+}
+
+.header__logo {
+    margin-right: 406px;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 38px;
+}
+
+.header__nav-item-link {
+    color: var(--md-text-color--light-gray);
+
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.header__nav-item-link:hover:not(.header__nav-item-link--active) {
+    color: var(--md-black-color);
+}
+
+.header__nav-item-link--active {
+    position: relative;
+
+    color: var(--md-black-color);
+
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.header__nav-item-link--active::after {
+    position: absolute;
+    left: 0;
+    bottom: -31px;
+
+    content: "";
+    width: 16px;
+    height: 2px;
+
+    background-color: var(--md-primary-color);
+}
+
+.header__sign-up {
+    margin-left: 88px;
+}
