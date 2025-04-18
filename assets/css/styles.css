@@ -19,7 +19,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-/* ===== Common ===== */
+/* ====== Common ====== */
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -56,14 +56,14 @@ a {
     background-color: var(--white-color);
 }
 
-/* === Header === */
+/* ==== Header ==== */
 .header {
     min-height: 100vh;
 
     font-family: "Public Sans", sans-serif;
 }
 
-/* = Header top = */
+/* == Header top == */
 .header-top-wrapper {
     position: relative;
 
@@ -142,18 +142,63 @@ a {
     margin-left: 88px;
 }
 
-/* = Header bottom = */
+/* == Header bottom == */
 .header-bottom-wrapper {
     display: grid;
     grid-template-columns: 2fr 3fr;
     column-gap: 76px;
 
+    position: relative;
+
     padding-top: 60px;
+}
+
+.header__img-pos-1 {
+    position: absolute;
+    top: 36px;
+    left: 255px;
+    z-index: 2;
+}
+
+.header__img-pos-2 {
+    position: absolute;
+    top: 35px;
+    left: 301px;
+    z-index: 2;
+}
+
+.header__img-pos-3 {
+    position: absolute;
+    top: 562px;
+    right: 34px;
+    z-index: 2;
+}
+
+.header__img-pos-4 {
+    position: absolute;
+    top: 323px;
+    right: 80px;
+    z-index: 2;
+}
+
+.header__bg-blur-color {
+    position: absolute;
+    top: 182px;
+    right: 176px;
+
+    width: 340px;
+    height: 340px;
+    border-radius: 340px;
+
+    background: #4dbb9a;
+
+    filter: blur(137px);
 }
 
 .header__heading {
     margin-top: 44px;
     width: 368px;
+    bottom: 52px;
 
     font-family: inherit;
     font-size: 5rem;
@@ -200,8 +245,8 @@ a {
     transform: rotate(180deg);
 }
 
-.header-play-btn__wrapper:hover {
-    transform: rotate(180deg);
+.header-play-btn__link:hover {
+    text-decoration: underline;
 }
 
 .header-play-btn-icon__img {
@@ -219,6 +264,24 @@ a {
     line-height: 1.67;
 }
 
-.header-play-btn__link:hover {
-    text-decoration: underline;
+.header__media-list {
+    display: flex;
+    column-gap: 20px;
+}
+
+.header__media-item:nth-child(2) {
+    margin-top: 78px;
+}
+
+.header__media-img {
+    position: relative;
+    z-index: 1;
+
+    display: inline-block;
+
+    width: 202px;
+    height: 466px;
+    border-radius: 110px;
+
+    object-fit: cover;
 }
