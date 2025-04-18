@@ -87,6 +87,16 @@
             rel="stylesheet"
         />
 
+        <!-- Fonts Awesome -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- Styles CSS -->
@@ -94,10 +104,9 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="header">
+        <header class="header header-sticky">
             <div class="container">
-                <!-- Header top -->
-                <div class="header-top-wrapper">
+                <div class="header-wrapper">
                     <!-- Header logo -->
                     <div class="header__logo">
                         <a href="./" class="header__logo-link">
@@ -143,75 +152,76 @@
                         <a href="#!" class="btn">Sign Up</a>
                     </div>
                 </div>
+            </div>
+        </header>
 
-                <!-- Header bottom -->
-                <div class="header-bottom-wrapper">
-                    <!-- Header bottom left -->
-                    <div class="header-bottom__left">
-                        <h1 class="header__heading">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <!-- Hero left -->
+                    <div class="hero-bottom__left">
+                        <h1 class="hero__heading">
                             We’re a creative design agency.
                         </h1>
-                        <p class="header__desc">
+                        <p class="hero__desc">
                             A brilliant, modular agency template for startup’s
                             build yours toady.
                         </p>
-                        <div class="header__cta">
-                            <div class="header-btn-contact">
+                        <div class="hero__cta">
+                            <div class="hero-btn-contact">
                                 <a href="#!" class="btn">Get in touch</a>
                             </div>
-                            <div class="header-play-btn">
-                                <div class="header-play-btn__wrapper">
-                                    <a
-                                        href="#!"
-                                        class="header-play-btn__ellipse"
-                                    >
+                            <div class="hero-play-btn">
+                                <div class="hero-play-btn__wrapper">
+                                    <a href="#!" class="hero-play-btn__ellipse">
                                         <img
                                             loading="lazy"
                                             src="./assets/img/icons/ellipse-icon.svg"
                                             alt=""
                                         />
                                     </a>
-                                    <a href="#!" class="header-play-btn-icon">
+                                    <a href="#!" class="hero-play-btn-icon">
                                         <img
                                             loading="lazy"
-                                            class="header-play-btn-icon__img"
+                                            class="hero-play-btn-icon__img"
                                             src="./assets/img/icons/play-btn-icon.svg"
                                             alt=""
                                         />
                                     </a>
                                 </div>
-                                <a href="#!" class="header-play-btn__link">
+                                <a href="#!" class="hero-play-btn__link">
                                     <span>Watch Video</span>
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Header bottom right -->
-                    <div class="header-bottom__right">
-                        <div class="header__media-list">
-                            <figure class="header__media-item">
+                    <!-- Hero right -->
+                    <div class="hero-bottom__right">
+                        <div class="hero__media-list">
+                            <figure class="hero__media-item">
                                 <img
                                     loading="lazy"
                                     src="./assets/img/media/img-media1.png"
                                     alt=""
-                                    class="header__media-img"
+                                    class="hero__media-img"
                                 />
                             </figure>
-                            <figure class="header__media-item">
+                            <figure class="hero__media-item">
                                 <img
                                     loading="lazy"
                                     src="./assets/img/media/imd-media2.png"
                                     alt=""
-                                    class="header__media-img"
+                                    class="hero__media-img"
                                 />
                             </figure>
-                            <figure class="header__media-item">
+                            <figure class="hero__media-item">
                                 <img
                                     loading="lazy"
                                     src="./assets/img/media/img-media3.png"
                                     alt=""
-                                    class="header__media-img"
+                                    class="hero__media-img"
                                 />
                             </figure>
                         </div>
@@ -219,30 +229,70 @@
                             loading="lazy"
                             src="./assets/img/media/img-flower.svg"
                             alt=""
-                            class="header__img-pos-1"
+                            class="hero__img-pos-1"
                         />
                         <img
                             loading="lazy"
                             src="./assets/img/media/img-line-vector1.svg"
                             alt=""
-                            class="header__img-pos-2"
+                            class="hero__img-pos-2"
                         />
                         <img
                             loading="lazy"
                             src="./assets/img/media/img-flower.svg"
                             alt=""
-                            class="header__img-pos-3"
+                            class="hero__img-pos-3"
                         />
                         <img
                             loading="lazy"
                             src="./assets/img/media/img-line-vector2.svg"
                             alt=""
-                            class="header__img-pos-4"
+                            class="hero__img-pos-4"
                         />
-                        <div class="header__bg-blur-color"></div>
+                        <div class="hero__bg-blur-color"></div>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
+
+        <!-- Banner -->
+        <div class="banner">
+            <div class="container">
+                <div class="banner-wrapper">
+                    <ul class="banner__list">
+                        <li class="banner__item">
+                            <a href="#!" class="banner__item-link">
+                                <i class="fa-brands fa-google"></i>
+                                Google
+                            </a>
+                        </li>
+                        <li class="banner__item">
+                            <a href="#!" class="banner__item-link">
+                                <i class="fa-brands fa-slack"></i>
+                                Slack
+                            </a>
+                        </li>
+                        <li class="banner__item">
+                            <a href="#!" class="banner__item-link">
+                                <i class="fa-brands fa-discord"></i>
+                                Discord
+                            </a>
+                        </li>
+                        <li class="banner__item">
+                            <a href="#!" class="banner__item-link">
+                                <i class="fa-brands fa-telegram"></i>
+                                Telegram
+                            </a>
+                        </li>
+                        <li class="banner__item">
+                            <a href="#!" class="banner__item-link">
+                                <i class="fa-brands fa-square-x-twitter"></i>
+                                Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
