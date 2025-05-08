@@ -143,6 +143,8 @@ a {
 .hero-wrapper {
     display: flex;
     justify-content: space-between;
+
+    position: relative;
 }
 
 /* ==== Hero Left ==== */
@@ -246,10 +248,58 @@ a {
 }
 
 .hero-right__img {
+    position: relative;
+
     width: 202px;
     height: 466px;
 
     border-radius: 110px;
 
     object-fit: cover;
+
+    z-index: 4;
+}
+
+/* ==== Images Fixed ==== */
+.hero-img-fixed-vector-1 {
+    position: absolute;
+    top: 36px;
+    left: 256px;
+    z-index: 6;
+}
+
+.hero-img-fixed-vector-2 {
+    position: absolute;
+    top: 35px;
+    left: 302px;
+    z-index: 6;
+}
+
+.hero-img-fixed-vector-3 {
+    position: absolute;
+    top: 322px;
+    right: 80px;
+    z-index: 6;
+}
+
+.hero-img-fixed-vector-4 {
+    position: absolute;
+    top: 562px;
+    right: 34px;
+    z-index: 6;
+}
+
+.hero-blur-background {
+    position: absolute;
+    top: 182px;
+    right: 176px;
+
+    width: 340px;
+    height: 340px;
+
+    border-radius: 340px;
+
+    background-color: #4dbb9a;
+
+    filter: blur(137px);
 }
