@@ -138,6 +138,8 @@ a {
 /* ====== Hero ====== */
 .hero {
     font-family: "Public Sans", sans-serif;
+
+    /* height: calc(100vh - 100px); */
 }
 
 .hero-wrapper {
@@ -145,6 +147,8 @@ a {
     justify-content: space-between;
 
     position: relative;
+
+    padding-bottom: 100px;
 }
 
 /* ==== Hero Left ==== */
@@ -302,4 +306,37 @@ a {
     background-color: #4dbb9a;
 
     filter: blur(137px);
+}
+
+/* ====== Social ====== */
+.social-wrapper {
+    margin-top: 42px;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 999px;
+
+    background-color: var(--secondary-color);
+}
+
+.social__brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 3.2rem;
+    font-weight: 500;
+
+    color: var(--primary-color);
+}
+
+.social__brand:hover .social__brand-icon {
+    opacity: 0.8;
+}
+
+.social__brand:hover .social__brand-name {
+    text-decoration: underline;
 }
